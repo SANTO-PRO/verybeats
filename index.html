@@ -5,6 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<!-- Icon cdn Link Start -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<!-- Icon cdn Link End -->
+
 		<!-- Style Sheet Link Start -->
 		<link rel="stylesheet" href="/style/style.css" />
 		<!-- Style Sheet Link End -->
@@ -15,6 +24,407 @@
 		<header>
 			<h2 class="logo">verybeats</h2>
 		</header>
+
+		<section>
+			<div class="sequencer">
+				<!-- Kick Track Start  -->
+				<div class="kick-track">
+					<!-- Kick Icon start  -->
+
+					<div class="icons kick-icon">
+						<svg
+							width="52"
+							height="52"
+							viewBox="0 0 52 52"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M28 47.9103C39.213 46.8998 48 37.4761 48 26C48 13.8497 38.1503 4 26 4C13.8497 4 4 13.8497 4 26C4 37.4761 12.787 46.8998 24 47.9103V37.6586C21.6696 36.8349 20 34.6125 20 32C20 28.6863 22.6863 26 26 26C29.3137 26 32 28.6863 32 32C32 34.6125 30.3304 36.8349 28 37.6586V47.9103ZM28 51.9242C41.4249 50.903 52 39.6865 52 26C52 11.6406 40.3594 0 26 0C11.6406 0 0 11.6406 0 26C0 39.6865 10.5751 50.903 24 51.9242V52H26H28V51.9242Z"
+								fill="white"
+							/>
+						</svg>
+					</div>
+					<!-- Kick Icon end  -->
+
+					<!-- Select Menu start  -->
+
+					<div class="select-menu">
+						<select name="kick-select" id="kick-select">
+							<option value="./sounds/kicks/kick-big.wav">Kick Big</option>
+							<option value="./sounds/kicks/kick-classic.wav">
+								Kick Classic
+							</option>
+							<option value="./sounds/kicks/kick-deep.wav">Kick Deep</option>
+							<option value="./sounds/kicks/kick-electro01.wav">
+								Kick Electro01
+							</option>
+							<option value="./sounds/kicks/kick-thump.wav">Kick Thump</option>
+						</select>
+						<!-- Down Arrow Icon  -->
+						<i class="fas fa-chevron-down"></i>
+					</div>
+
+					<!-- Select Menu end  -->
+
+					<!-- Pads Section start  -->
+
+					<div class="pad-part-1 activee">
+						<div class="pad kick-track b0 active"></div>
+						<div class="pad kick-track b1"></div>
+						<div class="pad kick-track b2"></div>
+						<div class="pad kick-track b3"></div>
+						<div class="pad kick-track b4 active"></div>
+						<div class="pad kick-track b5"></div>
+						<div class="pad kick-track b6"></div>
+					</div>
+					<div class="pad-part-2">
+						<div class="pad kick-track b7"></div>
+						<div class="pad kick-track b8 active"></div>
+						<div class="pad kick-track b9"></div>
+						<div class="pad kick-track b10 active"></div>
+						<div class="pad kick-track b11"></div>
+						<div class="pad kick-track b12"></div>
+						<div class="pad kick-track b13 active"></div>
+					</div>
+
+					<!-- Pads Section end  -->
+
+					<!-- Mute Button start  -->
+
+					<button data-track="0" class="mute kick-volume">
+						<i class="fas fa-volume-mute"></i>
+						<i class="fas fa-volume-up"></i>
+					</button>
+
+					<!-- Mute Button end  -->
+				</div>
+				<!-- Kick Track End  -->
+
+				<!-- Hihat Track start  -->
+
+				<div class="hihat-track">
+					<!-- Hihat Icon start  -->
+					<div class="icons hihat-icon">
+						<svg
+							width="51"
+							height="42"
+							viewBox="0 0 51 42"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon"
+						>
+							<path
+								d="M50 21C50 21.8292 49.5264 22.7583 48.3554 23.7354C47.19 24.7078 45.4439 25.6284 43.1984 26.421C38.7164 28.0029 32.4591 29 25.5 29C18.5409 29 12.2836 28.0029 7.8016 26.421C5.55607 25.6284 3.80997 24.7078 2.64461 23.7354C1.47362 22.7583 1 21.8292 1 21C1 20.1708 1.47362 19.2417 2.64461 18.2646C3.80997 17.2922 5.55607 16.3716 7.8016 15.579C12.2836 13.9971 18.5409 13 25.5 13C32.4591 13 38.7164 13.9971 43.1984 15.579C45.4439 16.3716 47.19 17.2922 48.3554 18.2646C49.5264 19.2417 50 20.1708 50 21Z"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="25"
+								y1="30"
+								x2="25"
+								y2="42"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="25"
+								y1="4.37114e-08"
+								x2="25"
+								y2="20.37"
+								stroke="white"
+								stroke-width="2"
+							/>
+						</svg>
+					</div>
+					<!-- hihat icon end  -->
+
+					<!-- Select Menu start  -->
+					<div class="select-menu">
+						<select name="hihat-select" id="hihat-select">
+							<option value="./sounds/hihats/hihat-808.wav">Hihat 808</option>
+							<option value="./sounds/hihats/hihat-acoustic01.wav">
+								Hihat Acoustic01
+							</option>
+							<option value="./sounds/hihats/hihat-reso.wav">Hihat Reso</option>
+							<option value="./sounds/hihats/hihat-digital.wav">
+								Hihat Digital
+							</option>
+						</select>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+
+					<!-- Select Menu end  -->
+
+					<!-- Pads section start  -->
+					<div class="pad-part-1 activee">
+						<div class="pad hihat-pad b0"></div>
+						<div class="pad hihat-pad b1"></div>
+						<div class="pad hihat-pad b2"></div>
+						<div class="pad hihat-pad b3"></div>
+						<div class="pad hihat-pad b4"></div>
+						<div class="pad hihat-pad b5"></div>
+						<div class="pad hihat-pad b6"></div>
+					</div>
+					<div class="pad-part-2">
+						<div class="pad hihat-pad b7"></div>
+						<div class="pad hihat-pad b8"></div>
+						<div class="pad hihat-pad b9"></div>
+						<div class="pad hihat-pad b10"></div>
+						<div class="pad hihat-pad b11"></div>
+						<div class="pad hihat-pad b12"></div>
+						<div class="pad hihat-pad b13"></div>
+					</div>
+					<!-- Pads section end  -->
+
+					<!-- Mute Button start  -->
+					<button data-track="1" class="mute hihat-volume">
+						<i class="fas fa-volume-mute"></i>
+						<i class="fas fa-volume-up"></i>
+					</button>
+					<!-- Mute Button end  -->
+				</div>
+
+				<!-- Hihat Track end  -->
+
+				<!-- Tom Track start  -->
+
+				<!-- Snare icon start  -->
+				<div class="snare-track">
+					<div class="icons snare-icon">
+						<svg
+							width="51"
+							height="38"
+							viewBox="0 0 51 38"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M46.4656 18.9998C45.9933 19.3442 45.4859 19.6765 44.9459 19.9954C44.9489 19.9974 44.952 19.9994 44.955 20.0015C45.4901 19.6838 46.0186 19.3561 46.5092 19.0317C46.4947 19.021 46.4802 19.0104 46.4656 18.9998ZM5.72146 19.9957C5.18141 19.6769 4.67398 19.3447 4.20164 19.0002C4.19319 19.0064 4.18475 19.0126 4.17631 19.0187C4.65797 19.3527 5.17842 19.6843 5.70915 20.004C5.71325 20.0012 5.71735 19.9985 5.72146 19.9957ZM48.8656 26.7284C48.9255 26.5223 48.9617 26.3374 48.9776 26.178V26.1947H50.6513C50.1729 32.7537 39.021 38 25.3339 38C11.6469 38 0.494939 32.7537 0.0166016 26.1947H1.71268C1.81428 27.1611 2.25102 28.163 3.0458 29.1508C4.12525 30.6907 5.95061 32.2787 8.88291 33.2301C13.1351 35.1187 18.9101 36.3111 25.3339 36.3111C32.132 36.3111 38.2034 34.9758 42.5124 32.8931C46.3406 31.0428 48.3832 28.8249 48.8656 26.7284Z"
+								fill="white"
+							/>
+							<path
+								d="M49.6667 12.2444C49.6667 15.0249 47.3028 17.8315 42.8115 20.0022C38.3902 22.1392 32.212 23.4889 25.3333 23.4889C18.4547 23.4889 12.2765 22.1392 7.85513 20.0022C3.36391 17.8315 1 15.0249 1 12.2444C1 9.46395 3.36391 6.65742 7.85513 4.48666C12.2765 2.34969 18.4547 1 25.3333 1C32.212 1 38.3902 2.34969 42.8115 4.48666C47.3028 6.65742 49.6667 9.46395 49.6667 12.2444Z"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="10.2888"
+								y1="21.1111"
+								x2="10.2888"
+								y2="34.6391"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="0.75"
+								y1="12.6667"
+								x2="0.749999"
+								y2="26.1947"
+								stroke="white"
+								stroke-width="1.5"
+							/>
+							<line
+								x1="26.3334"
+								y1="22.8"
+								x2="26.3334"
+								y2="37.1724"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="40.6888"
+								y1="21.1111"
+								x2="40.6888"
+								y2="34.6391"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="49.7278"
+								y1="13.5111"
+								x2="49.7278"
+								y2="27.0391"
+								stroke="white"
+								stroke-width="1.5"
+							/>
+						</svg>
+					</div>
+					<!-- Snare icon end  -->
+
+					<div class="select-menu">
+						<select name="snare-select" id="snare-select">
+							<option value="./sounds/snares/snare-808.wav">Snare 808</option>
+							<option value="./sounds/snares/snare-big.wav">Snare Big</option>
+							<option value="./sounds/snares/snare-modular.wav">
+								Snare Modular
+							</option>
+							<option value="./sounds/snares/snare-tape.wav">Snare Tape</option>
+							<option value="./sounds/snares/snare-vinyl01.wav">
+								Snare Vinyl 01
+							</option>
+						</select>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+
+					<!-- Pads section start  -->
+					<div class="pad-part-1">
+						<div class="pad snare-pad b0"></div>
+						<div class="pad snare-pad b1"></div>
+						<div class="pad snare-pad b2"></div>
+						<div class="pad snare-pad b3"></div>
+						<div class="pad snare-pad b4"></div>
+						<div class="pad snare-pad b5"></div>
+						<div class="pad snare-pad b6"></div>
+					</div>
+
+					<div class="pad-part-2">
+						<div class="pad snare-pad b7"></div>
+						<div class="pad snare-pad b8"></div>
+						<div class="pad snare-pad b9"></div>
+						<div class="pad snare-pad b10"></div>
+						<div class="pad snare-pad b11"></div>
+						<div class="pad snare-pad b12"></div>
+						<div class="pad snare-pad b13"></div>
+					</div>
+					<!-- Pads section end  -->
+
+					<!-- Mute Button start  -->
+
+					<button class="mute snare-volume">
+						<i class="fas fa-volume-mute"></i>
+						<i class="fas fa-volume-up"></i>
+					</button>
+
+					<!-- Mute Button end  -->
+				</div>
+
+				<!-- Tom Track end  -->
+
+				<!-- Clap Track start  -->
+
+				<!-- clap icon start  -->
+				<div class="clap-track">
+					<div class="icons clap-icon">
+						<svg
+							width="51"
+							height="38"
+							viewBox="0 0 51 38"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M46.4656 18.9998C45.9933 19.3442 45.4859 19.6765 44.9459 19.9954C44.9489 19.9974 44.952 19.9994 44.955 20.0015C45.4901 19.6838 46.0186 19.3561 46.5092 19.0317C46.4947 19.021 46.4802 19.0104 46.4656 18.9998ZM5.72146 19.9957C5.18141 19.6769 4.67398 19.3447 4.20164 19.0002C4.19319 19.0064 4.18475 19.0126 4.17631 19.0187C4.65797 19.3527 5.17842 19.6843 5.70915 20.004C5.71325 20.0012 5.71735 19.9985 5.72146 19.9957ZM48.8656 26.7284C48.9255 26.5223 48.9617 26.3374 48.9776 26.178V26.1947H50.6513C50.1729 32.7537 39.021 38 25.3339 38C11.6469 38 0.494939 32.7537 0.0166016 26.1947H1.71268C1.81428 27.1611 2.25102 28.163 3.0458 29.1508C4.12525 30.6907 5.95061 32.2787 8.88291 33.2301C13.1351 35.1187 18.9101 36.3111 25.3339 36.3111C32.132 36.3111 38.2034 34.9758 42.5124 32.8931C46.3406 31.0428 48.3832 28.8249 48.8656 26.7284Z"
+								fill="white"
+							/>
+							<path
+								d="M49.6667 12.2444C49.6667 15.0249 47.3028 17.8315 42.8115 20.0022C38.3902 22.1392 32.212 23.4889 25.3333 23.4889C18.4547 23.4889 12.2765 22.1392 7.85513 20.0022C3.36391 17.8315 1 15.0249 1 12.2444C1 9.46395 3.36391 6.65742 7.85513 4.48666C12.2765 2.34969 18.4547 1 25.3333 1C32.212 1 38.3902 2.34969 42.8115 4.48666C47.3028 6.65742 49.6667 9.46395 49.6667 12.2444Z"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="10.2888"
+								y1="21.1111"
+								x2="10.2888"
+								y2="34.6391"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="0.75"
+								y1="12.6667"
+								x2="0.749999"
+								y2="26.1947"
+								stroke="white"
+								stroke-width="1.5"
+							/>
+							<line
+								x1="26.3334"
+								y1="22.8"
+								x2="26.3334"
+								y2="37.1724"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="40.6888"
+								y1="21.1111"
+								x2="40.6888"
+								y2="34.6391"
+								stroke="white"
+								stroke-width="2"
+							/>
+							<line
+								x1="49.7278"
+								y1="13.5111"
+								x2="49.7278"
+								y2="27.0391"
+								stroke="white"
+								stroke-width="1.5"
+							/>
+						</svg>
+					</div>
+					<!-- Snare icon end  -->
+
+					<div class="select-menu">
+						<select name="clap-select" id="clap-select">
+							<option value="./sounds/snares/snare-808.wav">Snare 808</option>
+							<option value="./sounds/snares/snare-big.wav">Snare Big</option>
+							<option value="./sounds/snares/snare-modular.wav">
+								Snare Modular
+							</option>
+							<option value="./sounds/snares/snare-tape.wav">Snare Tape</option>
+							<option value="./sounds/snares/snare-vinyl01.wav">
+								Snare Vinyl 01
+							</option>
+						</select>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+
+					<!-- Pads section start  -->
+					<div class="pad-part-1">
+						<div class="pad snare-pad b0"></div>
+						<div class="pad snare-pad b1"></div>
+						<div class="pad snare-pad b2"></div>
+						<div class="pad snare-pad b3"></div>
+						<div class="pad snare-pad b4"></div>
+						<div class="pad snare-pad b5"></div>
+						<div class="pad snare-pad b6"></div>
+					</div>
+
+					<div class="pad-part-2">
+						<div class="pad snare-pad b7"></div>
+						<div class="pad snare-pad b8"></div>
+						<div class="pad snare-pad b9"></div>
+						<div class="pad snare-pad b10"></div>
+						<div class="pad snare-pad b11"></div>
+						<div class="pad snare-pad b12"></div>
+						<div class="pad snare-pad b13"></div>
+					</div>
+					<!-- Pads section end  -->
+
+					<!-- Mute Button start  -->
+
+					<button class="mute snare-volume">
+						<i class="fas fa-volume-mute"></i>
+						<i class="fas fa-volume-up"></i>
+					</button>
+
+					<!-- Mute Button end  -->
+				</div>
+
+				<!-- Tom Track end  -->
+			</div>
+		</section>
 
 		<!-- JS Link Start -->
 		<script src="/app.js"></script>
