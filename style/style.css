@@ -51,4 +51,63 @@ header .logo:hover {
   letter-spacing: 0.2rem;
   cursor: crosshair;
 }
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .sequencer {
+  margin: 2rem;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .kick-track,
+section .hihat-track,
+section .hihat-open-track,
+section .snare-track,
+section .clap-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+section .kick-pad:hover,
+section .kick-icon:hover,
+section .kick-pad.active {
+  background: #9023f5;
+}
+
+section .hihat-pad:hover,
+section .hihat-icon:hover,
+section .hihat-pad.active {
+  background: #6360ff;
+}
+
+section .hihat-open-pad:hover,
+section .hihat-open-icon:hover,
+section .hihat-open-pad.active {
+  background: #5fc779;
+}
 /*# sourceMappingURL=style.css.map */

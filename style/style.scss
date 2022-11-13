@@ -58,3 +58,53 @@ header {
 		}
 	}
 }
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	//==> Sequencer:
+	.sequencer {
+		margin: 2rem;
+		width: 85%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	//==> All Tracks:
+	.kick-track,
+	.hihat-track,
+	.hihat-open-track,
+	.snare-track,
+	.clap-track {
+		display: flex;
+		margin-top: 1rem;
+	}
+
+	//==> Pads :
+
+	// kick Pads:
+	.kick-pad:hover,
+	.kick-icon:hover,
+	.kick-pad.active {
+		background: #9023f5;
+	}
+
+	//hihat pads:
+	.hihat-pad:hover,
+	.hihat-icon:hover,
+	.hihat-pad.active {
+		background: #6360ff;
+	}
+
+	//hihat Open pads:
+	.hihat-open-pad:hover,
+	.hihat-open-icon:hover,
+	.hihat-open-pad.active {
+		background: #5fc779;
+	}
+}
