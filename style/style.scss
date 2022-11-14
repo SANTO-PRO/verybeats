@@ -1,3 +1,5 @@
+@import 'media';
+
 * {
 	padding: 0;
 	margin: 0;
@@ -25,7 +27,7 @@ body {
 header {
 	width: 350px;
 	height: 40px;
-	margin: 1rem;
+	margin: 6rem 0 0 200px;
 
 	display: flex;
 	align-items: center;
@@ -68,6 +70,7 @@ section {
 	.sequencer {
 		margin: 2rem;
 		width: 85%;
+		margin-top: 2rem;
 
 		display: flex;
 		align-items: center;
@@ -107,4 +110,227 @@ section {
 	.hihat-open-pad.active {
 		background: #5fc779;
 	}
+
+	//Snare:
+	.snare-pad:hover,
+	.snare-icon:hover,
+	.snare-pad.active {
+		background: #40e2ff;
+	}
+
+	//Claps:
+	.clap-pad:hover,
+	.clap-icon:hover,
+	.clap-pad.active {
+		background: #fc7e2b;
+	}
+
+	// Track icons:
+
+	.icons,
+	.icons,
+	.icons,
+	.icons,
+	.icons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		height: 4rem;
+		width: 5rem;
+		margin: 0 0.6rem;
+		border-radius: 0.6rem;
+		cursor: pointer;
+
+		background: #1b1b1b;
+	}
+
+	.icon {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	// Select-menu:
+	.select-menu {
+		position: relative;
+
+		select {
+			width: 15rem;
+			height: 4rem;
+
+			border: none;
+			border-radius: 0.6rem;
+			color: white;
+			text-align: center;
+			text-align-last: center;
+			text-transform: uppercase;
+
+			appearance: none;
+			cursor: pointer;
+
+			background: #1b1b1b;
+			color: white;
+		}
+
+		// Down Arrow:
+		.fa-chevron-down {
+			height: 1rem;
+			width: 1rem;
+
+			position: absolute;
+			top: 50%;
+			right: 10%;
+			transform: translateY(-95%);
+			pointer-events: none;
+
+			font-size: 1.2rem;
+			color: rgb(168, 168, 168);
+		}
+	}
+
+	// Pads Section:
+	.pad-part-1,
+	.pad-part-2 {
+		display: flex;
+
+		.pad {
+			width: 4rem;
+			height: 4rem;
+			background: #1b1b1b;
+			color: white;
+
+			border: none;
+			margin: 0 0.5rem;
+			border-radius: 0.6rem;
+			cursor: pointer;
+
+			transition: all 0.3s ease;
+		}
+	}
+
+	// Mute Button:
+	.mute {
+		width: 4rem;
+		height: 4rem;
+
+		background: #1b1b1b;
+		color: white;
+		border: none;
+		border-radius: 0.6rem;
+		margin: 0 0.5rem;
+
+		cursor: pointer;
+
+		.fa-volume-up,
+		.fa-volume-mute {
+			pointer-events: none;
+		}
+		.fa-volume-up {
+			color: #428eff;
+		}
+		.fa-volume-mute {
+			display: none;
+			color: rgb(255, 81, 81);
+		}
+
+		.fa-volume-mute.active {
+			display: block;
+		}
+		.fa-volume-up.active {
+			display: none;
+		}
+	}
+}
+
+// Play and Clear Btn:
+.btnContainer {
+	height: 4rem;
+	width: 20rem;
+
+	display: flex;
+	margin-top: 2rem;
+
+	.play-btn,
+	.clear {
+		height: 4rem;
+		width: 8rem;
+
+		background: #1b1b1b;
+		color: white;
+
+		border: none;
+		border-radius: 0.6rem;
+		margin: 0 1rem;
+	}
+
+	.clear {
+		font-size: 1.1rem;
+		text-transform: uppercase;
+
+		&:hover {
+			background: rgb(255, 81, 81);
+		}
+	}
+
+	.play-btn {
+		.fa-play {
+			font-size: 1.5rem;
+		}
+
+		.fa-stop {
+			display: none;
+			font-size: 1.5rem;
+		}
+
+		&:hover {
+			background: rgb(39, 207, 67);
+		}
+	}
+}
+
+// Beat Per Min Slider:
+.beatPerMin {
+	display: flex;
+	height: 2.5rem;
+	width: 30rem;
+
+	margin-top: 2rem;
+
+	P {
+		height: 2.5rem;
+		width: 10rem;
+		display: inline-block;
+
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 1.5rem;
+		text-align: center;
+		line-height: 2.5rem;
+
+		background: #1b1b1b;
+		color: #ff660e;
+		border-radius: 0.6rem 0 0 0.6rem;
+	}
+
+	input {
+		width: 20rem;
+		cursor: move;
+
+		appearance: none;
+		background: #131313;
+		accent-color: #ff660e;
+		border-radius: 0 0.6rem 0.6rem 0;
+	}
+
+	input[type='range']::-moz-range-thumb {
+		height: 2rem;
+		width: 0.3rem;
+	}
+	input[type='range']::-webkit-slider-thumb {
+		height: 2rem;
+		width: 0.3rem;
+	}
+}
+
+svg {
+	pointer-events: none;
 }
