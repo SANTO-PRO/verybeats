@@ -192,20 +192,19 @@ section {
 	.pad-part-1,
 	.pad-part-2 {
 		display: flex;
+	}
 
-		.pad {
-			width: 4rem;
-			height: 4rem;
-			background: #1b1b1b;
-			color: white;
+	.pad {
+		width: 4rem;
+		height: 4rem;
+		background: #1b1b1b;
 
-			border: none;
-			margin: 0 0.5rem;
-			border-radius: 0.6rem;
-			cursor: pointer;
+		border: none;
+		margin: 0 0.5rem;
+		border-radius: 0.6rem;
+		cursor: pointer;
 
-			transition: all 0.3s ease;
-		}
+		transition: all 0.3s ease;
 	}
 
 	// Mute Button:
