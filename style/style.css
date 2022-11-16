@@ -280,8 +280,8 @@ section .select-menu .fa-chevron-down {
   position: absolute;
   top: 50%;
   right: 10%;
-  -webkit-transform: translateY(-95%);
-          transform: translateY(-95%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   pointer-events: none;
   font-size: 1.2rem;
   color: #a8a8a8;
