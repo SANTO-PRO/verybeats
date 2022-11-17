@@ -1,5 +1,3 @@
-@import 'media';
-
 * {
 	padding: 0;
 	margin: 0;
@@ -83,7 +81,8 @@ section {
 	.hihat-track,
 	.hihat-open-track,
 	.snare-track,
-	.clap-track {
+	.clap-track,
+	.perc-track {
 		display: flex;
 		margin-top: 1rem;
 	}
@@ -123,6 +122,13 @@ section {
 	.clap-icon:hover,
 	.clap-pad.active {
 		background: #fc7e2b;
+	}
+
+	//Percs:
+	.perc-pad:hover,
+	.perc-icon:hover,
+	.perc-pad.active {
+		background: #ff209a;
 	}
 
 	// Track icons:
@@ -332,4 +338,125 @@ section {
 
 svg {
 	pointer-events: none;
+}
+
+// Responsiveness :
+
+@media screen and (max-width: 1680px) {
+	html {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 1360px) {
+	html {
+		font-size: 70%;
+	}
+}
+
+@media screen and (max-width: 1175px) {
+	html {
+		font-size: 60%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	html {
+		font-size: 35%;
+	}
+
+	.select-menu select {
+		font-size: 1.3rem;
+		width: 12rem;
+	}
+	.fa-volume-mute,
+	.fa-volume-up {
+		font-size: 1.7rem;
+	}
+	.pad-part-1,
+	.pad-part-2 {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	html {
+		font-size: 40%;
+	}
+
+	header {
+		width: 100%;
+
+		background: rgb(37, 37, 37);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		.logo {
+			font-size: 3rem;
+			margin-top: 2rem;
+
+			&:hover {
+				background: none;
+				border-radius: 0;
+
+				letter-spacing: 0.2rem;
+
+				cursor: crosshair;
+			}
+		}
+	}
+
+	.select-menu select {
+		font-size: 1.3rem;
+		width: 12rem;
+	}
+
+	section {
+		margin-top: 6rem;
+
+		.pad-part-1,
+		.pad-part-2 {
+			display: none;
+		}
+
+		.activee {
+			display: flex;
+		}
+
+		.toggle {
+			display: flex;
+		}
+
+		.part-1-toggle,
+		.part-2-toggle {
+			margin: 1.5rem;
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%;
+			border: 2px solid white;
+			cursor: pointer;
+		}
+		.active {
+			background-color: white;
+		}
+	}
+}
+
+// Keyframes:
+@keyframes playTrack {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.2);
+	}
 }
