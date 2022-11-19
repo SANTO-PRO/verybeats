@@ -40,10 +40,10 @@ class DrumKit {
 	}
 
 	repeat() {
-		let step = this.index % 14;
+		let step = this.index % 16;
 		const activePads = document.querySelectorAll(`.b${step}`);
 
-		if (step >= 7) {
+		if (step >= 8) {
 			this.changeToPart2();
 		} else {
 			this.changeToPart1();
