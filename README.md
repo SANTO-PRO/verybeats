@@ -1,2 +1,2 @@
 # verybeats
-A Beat Maker Website
+A Beat Maker Web App
